@@ -1,10 +1,6 @@
 # libraryProject
 REST API desenvolvida com Java e Spring Boot para gerenciamento de autores, implementando regras de negócio, controle de acesso por perfil (Gerente e Operador), validações robustas e padronização de respostas HTTP conforme contrato de API.
 
-Excelente. Vamos elevar isso para nível enterprise real, com linguagem técnica, decisões arquiteturais explícitas, governança de API, segurança e observabilidade.
-
-Abaixo está um README estruturado como projeto corporativo.
-
 ⸻
 
 📚 LibraryProject
@@ -265,38 +261,3 @@ Permite:
 	•	Testar endpoints
 	•	Visualizar contratos
 	•	Inspecionar modelos
-
-⸻
-
-🏗️ Decisões Técnicas
-
-Decisão	Justificativa
-UUID	Segurança e escalabilidade
-422 para validação	Semântica REST adequada
-409 para duplicidade	Conflito de estado
-204 em update/delete	Evita payload desnecessário
-RBAC via annotations	Código declarativo e limpo
-
-
-⸻
-
-🚀 Roadmap Futuro
-	•	Versionamento de API (/v1)
-	•	Implementação de Soft Delete
-	•	Paginação e ordenação
-	•	Cache com Redis
-	•	Rate Limiting
-	•	Auditoria com Spring Envers
-	•	CI/CD pipeline
-	•	Testes com Testcontainers
-
-⸻
-
-📌 Diferencial Técnico
-
-Este projeto demonstra:
-	•	Implementação real de contrato de API
-	•	Maturidade no uso de HTTP Status
-	•	Segurança baseada em papéis
-	•	Padronização enterprise de erros
-	•	Organização de código orientada a produção
