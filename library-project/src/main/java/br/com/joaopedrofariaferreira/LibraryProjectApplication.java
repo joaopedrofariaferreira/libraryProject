@@ -1,4 +1,4 @@
-package br.com.joaopedrofariaferreira.library;
+package br.com.joaopedrofariaferreira;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
