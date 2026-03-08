@@ -1,5 +1,6 @@
 package br.com.joaopedrofariaferreira.model;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
@@ -30,6 +31,11 @@ public class Autor {
 
     @Column(name = "nacionalidade", length = 100, nullable = false)
     private String nacionalidade;
+
+    public void setDataNascimento(Date dataNascimento2) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setDataNascimento'");
+    }
 
     //@OneToMany(mappedBy = "autor", cascade = CascadeType.ALL, fetch = fetch)
     //private List<Livros> livros;
