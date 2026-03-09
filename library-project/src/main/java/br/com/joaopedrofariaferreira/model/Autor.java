@@ -13,10 +13,13 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Table(name = "autor", schema = "public")
-@Data
+@Getter
+@Setter
 public class Autor {
     @Id
     @Column(name = "id")
@@ -33,10 +36,9 @@ public class Autor {
     private String nacionalidade;
 
     public void setDataNascimento(Date dataNascimento2) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setDataNascimento'");
+        this.dataNascimento = dataNascimento2;
     }
 
-    //@OneToMany(mappedBy = "autor", cascade = CascadeType.ALL, fetch = fetch)
-    //private List<Livros> livros;
+
+    
 }
