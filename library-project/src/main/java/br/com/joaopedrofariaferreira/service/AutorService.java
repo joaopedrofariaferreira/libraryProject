@@ -7,7 +7,7 @@ import br.com.joaopedrofariaferreira.model.Autor;
 @Service
 public class AutorService{
 
-    private final AutorRepository repository;
+    private final AutorRepository repository; //ineçao de dependencias
 
     public AutorService (AutorRepository repository){
         this.repository = repository;

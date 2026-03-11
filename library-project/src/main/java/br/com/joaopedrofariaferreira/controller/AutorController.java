@@ -27,10 +27,7 @@ public class AutorController {
     @PostMapping
     public ResponseEntity<Void> salvarAutor(@RequestBody AutorDTO autor){
         Autor autorEntidade = autor.mapearParaAutor();
-        service.salvar(autorEntidade);
-
         URI localtion = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(autorEntidade.getId()).toUri();
-
         return ResponseEntity.created(localtion).build();
     }
 }
